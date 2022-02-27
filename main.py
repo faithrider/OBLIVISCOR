@@ -94,6 +94,7 @@ def starting_screen():
     pygame.display.flip()
     quit_mechanic()
 
+    # controls page
     font = pygame.font.Font(pygame.font.match_font("calibri"), 18)
     controls = font.render('Press space when there is one line of dialogue.', False, WHITE, BLACK)
     control_window = controls.get_rect()
@@ -114,10 +115,6 @@ def starting_screen():
     control_window = controls.get_rect()
     control_window.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT * (4/5))
     screen.blit(controls, control_window)
-
-
-
-
 
     pygame.display.flip()
     quit_mechanic()
